@@ -47,10 +47,10 @@ word_avg_counts = {word: avg_count for word, avg_count in word_avg_counts.items(
 
 #Generating graph
 plt.figure(figsize=(10, 6))
-plt.bar(word_counts.keys(), [sum(counts) for counts in word_counts.values()], label='Absolute Anzahl')
-plt.bar(word_avg_counts.keys(), word_avg_counts.values(), label='Mittelwert')
-plt.xlabel('analysierte Wörter', fontsize=20)
-plt.ylabel('Anzahl an Erwähnungen', fontsize=20)
+plt.bar(word_counts.keys(), [sum(counts) for counts in word_counts.values()], label='Absolute Number')
+plt.bar(word_avg_counts.keys(), word_avg_counts.values(), label='Mean Value')
+plt.xlabel('Analysed Words', fontsize=20)
+plt.ylabel('Number of References', fontsize=20)
 plt.xticks(rotation=45, fontsize=15)
 plt.yticks(fontsize=10)
 plt.legend(fontsize=15)
